@@ -1,0 +1,369 @@
+<style> /* Homepage */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('Windows.jpg');
+
+    /* Set a specific height */
+    height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    height: 100px;
+    background-color: rgb(68, 44, 44);
+    font-size: 36px;
+    text-align: center;
+    padding: 50px;
+}
+
+
+
+
+
+body {
+    font-family: Times New Roman, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Green background */
+}
+
+header {
+    background-color: #000000; /* Blue background */
+    color: rgb(18, 55, 156); /* Text color */
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 2px solid rgb(0, 0, 0); /* Red bottom border */
+}
+
+main {
+    display: flex;
+    padding: 2rem;
+}
+
+.left-column {
+    width: 30%;
+    padding-right: 2rem;
+    border: 2px solid rgb(117, 22, 22); /* Add border */
+    border-radius: 10px; /* Optional: rounded corners */
+    padding: 1rem; /* Add padding inside the border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: add shadow */
+}
+
+.left-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.left-column li {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.hover-content {
+    display: none;
+    margin-top: 10px;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.left-column li:hover .hover-content {
+    display: block;
+    max-height: 100px; /* Adjust as needed */
+    opacity: 1;
+}
+
+.right-column {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    color: #d10b0ba1; /* Heading color */
+}
+
+h2 {
+    color: #2e1477; /* Subheading color */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #2d18e7; /* List item background color */
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem; /* Vertical space between list items */
+}
+
+a {
+    text-decoration: none;
+    color: #ca1b1b00; /* Link color */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.headshot {
+    border-radius: 50%; /* Circular border radius */
+    width: 150px;
+    height: 150px; /* Fixed typo */
+    object-fit: cover;
+    margin-bottom: 3rem;
+}
+
+.about {
+    width: 100%;
+    text-align: center;
+}
+
+
+    
+	
+	
+
+        .headshot {
+            width: 200px; /* Adjust the size as needed */
+            height: 200px; /* Ensures the image is square */
+            border: 2px solid #7c1616; /* Adds a border */
+            object-fit: cover; /* Ensures the image covers the entire area */
+            border-radius: 0; /* Ensures the image has square corners */
+        }
+					<img src="https://wegotthiscovered.com/wp-content/uploads/2023/05/ATHF-Carl-copy.jpg" alt="John Smith Headshot" class="headshot">
+
+    </style>
+
+	</body>
+</head>
+<style>
+nav {
+    display: flex;
+}
+
+.btn {
+    background-color: #000000; /* Blue background */
+    color: white; /* White text */
+    border: none;
+    padding: 10px 20px; /* Padding for the button */
+    margin: 0 5px; /* Space between buttons */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for buttons */
+}
+
+.btn:hover {
+    background-color: #000000; /* Darker blue on hover */
+}
+</style>
+<style> /* writing excerpt */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            max-width: 800px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .image-container {
+            width: 50%;
+            aspect-ratio: 4 / 5;
+            overflow: hidden;
+        }
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .content h1 {
+            margin-top: 0;
+        }
+        .content p {
+            color: #555;
+            line-height: 1.6;
+        }
+    
+	
+	
+.blog {
+    margin-top: 20px;
+}
+
+.blog-entry {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.comments-section {
+    border: 1px solid #ccc;
+    padding: 15px;
+}
+
+.comments-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.comments-section label {
+    margin-top: 10px;
+}
+
+.comments-section input,
+.comments-section textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.comments-section button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+.comments-section button:hover {
+    background-color: #0056b3;
+}
+
+
+<style>
+.left-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.left-column li {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.hover-content {
+    display: none;
+    margin-top: 10px;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.left-column li:hover .hover-content {
+    display: block;
+    max-height: 100px; /* Adjust as needed */
+    opacity: 1;
+}
+
+/* Link styles */
+.left-column a {
+    color: blue; /* Default link color */
+    text-decoration: none; /* Remove underline */
+    padding: 5px; /* Add some padding to make the hover area larger */
+    background-color: black; /* Default background color */
+    display: inline-block; /* Ensures background color covers the area */
+}
+
+.left-column a:hover {
+    color: red; /* Link color on hover */
+    background-color: rgb(255, 255, 255); /* Background color on hover */
+}
+
+.left-column a:active {
+    color: green; /* Link color when active/clicked */
+}
+
+.left-column a:visited {
+    color: purple; /* Link color after being visited */
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.footer-content p {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content ul li {
+    margin: 0 10px;
+}
+
+.footer-content ul li a img {
+    width: 24px;
+    height: 24px;
+    filter: invert(1); /* Inverts the color of the icons to white */
+}
+
+
+
+
+
+
+</style>
+
+    
