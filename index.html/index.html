@@ -14,10 +14,11 @@
     </div>
     <div class="parallax"></div>
 </body>
+
 <body>
     <header>
         <h1>AWP</h1>
-    
+       
         <nav>
             <a href="about.html" class="btn">About</a>
             <a href="resume.html" class="btn">Resume</a>
@@ -65,41 +66,61 @@
         <div class="right-column">
             <img src="https://wegotthiscovered.com/wp-content/uploads/2023/05/ATHF-Carl-copy.jpg" alt="John Smith Headshot" class="headshot">
             
-          
-
             <div class="blog">
-                <h2></h2>
-                <div class="blog-entry">
-                    <h3>Incoherent Ramblings</h3>
-                    <p>Date: <span>Today</span></p>
-                    <p></p>
-                </div>
-
-                <div class="comments-section">
-                    <h3>Leave a Comment</h3>
-                    <form action="#" method="post">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-                        <label for="comment">Comment:</label>
-                        <textarea id="comment" name="comment" rows="4" required></textarea>
-                        <button type="submit">Submit</button>
-                    </form>
+                <h2>Recent Entries</h2>
+                <div class="blog-entries">
+                    <div class="blog-entry">
+                        <img src="images/dinnertonight.jpeg" alt="Description of the image">
+                        <a href="blog1.html">The rise and fall of the roman empire</a>
+                    </div>
+                    <div class="blog-entry">
+                        <img src="images/previousjob.jpeg" alt="Description of the image">
+                        <a href="blog2.html">How to win friends and influence people</a>
+                    </div>
+                    <div class="blog-entry">
+                        <<img src="images/whatitis.png" alt="Description of the image">
+                        >
+                        <a href="blog3.html">Ask not what your country can do for you. Ask what can you do for your country.</a>
+                    </div>
                 </div>
             </div>
+        </div>
+
+               
         </div>
     </main>
     <footer>
         <div class="footer-content">
             <p>&copy; 2024 AWP. All rights reserved.</p>
             <ul class="socials">
-                <li><a href="https://twitter.com/yourprofile"><img src="images/twitter.png" alt="Twitter"></a></li>
-                <li><a href="https://linkedin.com/in/yourprofile"><img src="images/linkedin.png" alt="LinkedIn"></a></li>
-                <li><a href="https://github.com/yourprofile"><img src="images/github.png" alt="GitHub"></a></li>
+                <li><a href=""><img src="images/twitter.png" alt=""></a></li>
+                <li><a href=""><img src="images/linkedin.png" alt=""></a></li>
+                <li><a href="https://github.com/yourprofile"><img src="images/github.png" alt=""></a></li>
             </ul>
         </div>
     </footer>
 
-
+    <head>
+        <meta charset="UTF-8">
+        <title>Visit Counter</title>
+        <script>
+            function updateCounter() {
+                if (localStorage.getItem('visitCount')) {
+                    let visitCount = parseInt(localStorage.getItem('visitCount'));
+                    visitCount++;
+                    localStorage.setItem('visitCount', visitCount);
+                    document.getElementById('counter').innerText = 'Visit Count: ' + visitCount;
+                } else {
+                    localStorage.setItem('visitCount', 1);
+                    document.getElementById('counter').innerText = 'Visit Count: 1';
+                }
+            }
+        </script>
+    </head>
+    <body onload="updateCounter()">
+        
+        <p id="counter">Visit Count: 0</p>
+    </body>
 
 
 
