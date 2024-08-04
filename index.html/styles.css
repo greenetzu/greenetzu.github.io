@@ -220,51 +220,44 @@ nav {
     
 	
 	
-.blog {
-    margin-top: 20px;
-}
-
-.blog-entry {
-    border: 1px solid #ccc;
-    padding: 15px;
-    margin-bottom: 20px;
-}
-
-.comments-section {
-    border: 1px solid #ccc;
-    padding: 15px;
-}
-
-.comments-section form {
-    display: flex;
-    flex-direction: column;
-}
-
-.comments-section label {
-    margin-top: 10px;
-}
-
-.comments-section input,
-.comments-section textarea {
-    margin-top: 5px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.comments-section button {
-    margin-top: 10px;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    background-color: #007BFF;
-    color: white;
-    cursor: pointer;
-}
-
-.comments-section button:hover {
-    background-color: #0056b3;
-}
+  .about {
+            margin-top: 20px;
+        }
+        
+        .blog {
+            margin-top: 20px;
+        }
+        
+        .blog-entries {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .blog-entry {
+            width: 30%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            overflow: hidden;
+            text-align: center;
+        }
+        
+        .blog-entry img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .blog-entry a {
+            display: block;
+            padding: 10px;
+            background-color: #f8f9fa;
+            color: #007BFF;
+            text-decoration: none;
+            border-top: 1px solid #ccc;
+        }
+        
+        .blog-entry a:hover {
+            background-color: #e2e2e2;
+        }
 
 
 <style>
